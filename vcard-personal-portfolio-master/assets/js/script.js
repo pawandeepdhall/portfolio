@@ -113,8 +113,32 @@ for (let i = 0; i < filterBtn.length; i++) {
 
 }
 
+const btns = document.querySelectorAll("[data-target]");
+const close_modals = document.querySelectorAll(".project-close-modal");
+const over = document.getElementById("over");
 
+btns.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    document.querySelector(btn.dataset.target).classList.add("active");
+    over.classList.add("active");
+  });
+});
 
+close_modals.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const modal = btn.closest(".project-modal");
+    modal.classList.remove("active");
+    over.classList.remove("active");
+  });
+});
+
+window.onclick = (event) => {
+  if (event.target == over) {
+    const modals = document.querySelectorAll(".project-modal");
+    modals.forEach((modal) => modal.classList.remove("active"));
+    over.classList.remove("active");
+  }
+};
 // contact form variables
 const form = document.querySelector("[data-form]");
 const formInputs = document.querySelectorAll("[data-form-input]");
