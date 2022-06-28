@@ -308,12 +308,12 @@ article.active {
 }
 
 .has-scrollbar::-webkit-scrollbar-track {
-  background: var(--onyx);
-  border-radius: 5px;
+  /* background: var(--light-gray); */
+  border-radius: 20px;
 }
 
 .has-scrollbar::-webkit-scrollbar-thumb {
-  background: var(--orange-yellow-crayola);
+  /* background: var(--light-gray); */
   border-radius: 5px;
 }
 
@@ -713,9 +713,9 @@ img {vertical-align: middle;}
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
+  border-radius: 0 10px 10px 0px;
   user-select: none;
-  background-color: #1c212e;
+  background-color: #b2b2b2;
 }
 .slides-image-div{
   width:auto;
@@ -723,7 +723,7 @@ img {vertical-align: middle;}
 /* Position the "next button" to the right */
 .next {
   right: 0;
-  border-radius: 3px 0 0 3px;
+  border-radius: 10px 0 0 10px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
@@ -798,8 +798,28 @@ img {vertical-align: middle;}
   visibility: hidden;
 }
 
-.modal-container::-webkit-scrollbar {
-  display: none;
+.project-modal::-webkit-scrollbar {
+  /* display: none; */
+}
+.project-modal::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.project-modal::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 15px;
+}
+
+/* Handle */
+.project-modal::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 20px;
+}
+
+/* Handle on hover */
+.project-modal::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 
 .modal-container.active {
@@ -1128,7 +1148,9 @@ img {vertical-align: middle;}
 .select-item button:hover {
   --eerie-black-2: hsl(240, 2%, 20%);
 }
-
+.project-body{
+  color: grey;
+}
 .project-container {
   margin: 0 auto;
   display: grid;
@@ -1175,6 +1197,9 @@ img {vertical-align: middle;}
   border: none;
   font-size: 1.5rem;
 }
+.project-close-modal:hover {
+  color: rgb(157, 157, 157);
+}
 
 .project-modal {
   width: 80%;
@@ -1191,12 +1216,16 @@ img {vertical-align: middle;}
   overflow:auto;
 }
 .project-name-modal {
-  color: #413f42;
+  color: var(--white-2);
   padding-left: 20px;
   font-weight: 500;
+  font-size: 1.2rem;
 }
 .project-image-model {
   /* width: 50%; */
+}
+.project-body p{
+
 }
 
 .project-modal.active {
@@ -1207,9 +1236,9 @@ img {vertical-align: middle;}
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 2px solid #ccc;
   padding: 0.5rem;
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: white;
   font-size: 1.5vw;
 }
 .project-img-div {
@@ -2149,19 +2178,19 @@ textarea.form-input::-webkit-resizer {
   }
 
   body::-webkit-scrollbar-track {
-    background: var(--smoky-black);
+    background: white;
   }
 
   body::-webkit-scrollbar-thumb {
     border: 5px solid var(--smoky-black);
-    background: hsla(0, 0%, 100%, 0.1);
+    background: var(--light-gray);
     border-radius: 20px;
     box-shadow: inset 1px 1px 0 hsla(0, 0%, 100%, 0.11),
       inset -1px -1px 0 hsla(0, 0%, 100%, 0.11);
   }
 
   body::-webkit-scrollbar-thumb:hover {
-    background: hsla(0, 0%, 100%, 0.15);
+    background: hsla(0, 1%, 28%, 0.15);
   }
 
   body::-webkit-scrollbar-button {
