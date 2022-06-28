@@ -10,13 +10,16 @@
   <!--
     - favicon
   -->
-  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="./assets/images/wobgpic.png" type="image/x-icon">
 
   <!--
     - custom css link
   -->
   <link rel="stylesheet" href="./assets/css/style.css">
-
+  <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
   <!--
     - google font link
   -->
@@ -30,7 +33,7 @@
   <!--
     - #MAIN
   -->
-
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="https://img.icons8.com/windows/32/FFFFFF/long-arrow-up.png"/></button>
   <main>
 
     <!--
@@ -130,7 +133,7 @@
 
           <li class="social-item">
             <a href="https://www.linkedin.com/in/pawandeep-dhall/" class="social-link">
-              <ion-icon name="logo-linkedin"></ion-icon>
+              <img src="https://img.icons8.com/color/48/000000/linkedin.png"/>
             </a>
           </li>
 
@@ -899,6 +902,19 @@ had hands on experience with all types of 3d printers.
   
   
         </section>
+        <div class="download-resume">
+          <a href="./assets/Pawandeep_Dhall_Resume.pdf" class="download-resume-link" download>
+            Download Resume
+            <!-- <ul>
+                <li>&#68;ownload Resume</li>
+                <li>&#68;ownloading</li>
+                <li>Open File</li>
+            </ul>
+            <div>
+                <svg viewBox="0 0 24 24"></svg>
+            </div> -->
+        </a>
+        </div>
 
       </article>
 
@@ -971,23 +987,79 @@ had hands on experience with all types of 3d printers.
 
           </div>
           
-          <div class="project-outer-div">
-            <div class="project-container">
-              <div class="project-card" data-target="#modal1">
-                <img class="project-image" src="./assets/images/mooc_0.png" alt="MOOC Certifications" loading="lazy">
-                <h3>Project1</h3>
+          <div class="blog-posts-li">
+            <div class="blog-posts-list">
+              <div class="blog-post-item" data-target="#modal1">
+                <a href="#">
+                <figure class="blog-banner-box">
+                  <img  src="./assets/images/mooc_0.png" alt="MOOC Certifications" loading="lazy">
+                </figure>
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+                    <span class="dot"></span>
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+                  <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
+                  <p class="blog-text">
+                    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
+                  </p>
+                </div>
+                </a>
               </div>
-              <div class="project-card"  data-target="#modal2">
-                <img class="project-image" src="./assets/images/mooc_0.png" alt="MOOC Certifications" loading="lazy">
-                <h3>Project1</h3>
+              <div class="blog-post-item" data-target="#modal1">
+                <a href="#">
+                <figure class="blog-banner-box">
+                  <img  src="./assets/images/mooc_0.png" alt="MOOC Certifications" loading="lazy">
+                </figure>
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+                    <span class="dot"></span>
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+                  <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
+                  <p class="blog-text">
+                    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
+                  </p>
+                </div>
+                </a>
               </div>
-              <div class="project-card"  data-target="#modal3">
-                <img class="project-image" src="./assets/images/mooc_0.png" alt="MOOC Certifications" loading="lazy">
-                <h3>Project1</h3>
+              <div class="blog-post-item" data-target="#modal1">
+                <a href="#">
+                <figure class="blog-banner-box">
+                  <img  src="./assets/images/mooc_0.png" alt="MOOC Certifications" loading="lazy">
+                </figure>
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+                    <span class="dot"></span>
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+                  <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
+                  <p class="blog-text">
+                    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
+                  </p>
+                </div>
+                </a>
               </div>
-              <div class="project-card"  data-target="#modal3">
-                <img class="project-image" src="./assets/images/mooc_0.png" alt="MOOC Certifications" loading="lazy">
-                <h3>Project1</h3>
+              <div class="blog-post-item" data-target="#modal1">
+                <a href="#">
+                <figure class="blog-banner-box">
+                  <img  src="./assets/images/mooc_0.png" alt="MOOC Certifications" loading="lazy">
+                </figure>
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+                    <span class="dot"></span>
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+                  <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
+                  <p class="blog-text">
+                    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
+                  </p>
+                </div>
+                </a>
               </div>
             </div>
 
@@ -997,23 +1069,106 @@ had hands on experience with all types of 3d printers.
                 <button class="project-btn project-close-modal">&times;</button>
               </div>
               <div class="project-body">
-                <!-- <div class="project-img-div">
-                  <img class="project-image-model" src="./assets/images/mooc_0.png" alt="MOOC Certifications" loading="lazy">
-                </div> -->
-                <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere ea
-                officia consectetur. Laborum, dolor? Assumenda quo corrupti eveniet
-                velit fugit fugiat odit, dolorum labore obcaecati quia. Commodi
-                assumenda sed maxime!
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere ea
-                officia consectetur. Laborum, dolor? Assumenda quo corrupti eveniet
-                velit fugit fugiat odit, dolorum labore obcaecati quia. Commodi
-                assumenda sed maxime!
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere ea
-                officia consectetur. Laborum, dolor? Assumenda quo corrupti eveniet
-                velit fugit fugiat odit, dolorum labore obcaecati quia. Commodi
-                assumenda sed maxime!
-              </p>
+                <div class="project-slideshow-container">
+                <div class="slideshow-container">
+                  <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <div class="slides-image-div">
+                      <img class="slides-image" src="./assets/images/mooc_0.png" alt="MOOC Certifications" loading="lazy">
+                    </div>
+                  </div>
+                  
+                  <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <div class="slides-image-div">
+                      <img class="slides-image" src="./assets/images/mooc_0.png" alt="MOOC Certifications" loading="lazy">
+                    </div>
+                  </div>
+                  
+                  <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <div class="slides-image-div">
+                      <img class="slides-image"  src="./assets/images/mooc_0.png" alt="MOOC Certifications" loading="lazy">
+                    </div>
+                  </div>
+                  
+                  <a class="prev" onclick="plusSlides(-1)">❮</a>
+                  <a class="next" onclick="plusSlides(1)">❯</a>
+                  
+                  </div>
+                  <br>
+                  
+                  <div style="text-align:center">
+                    <span class="dott" onclick="currentSlide(1)"></span> 
+                    <span class="dott" onclick="currentSlide(2)"></span> 
+                    <span class="dott" onclick="currentSlide(3)"></span> 
+                  </div>
+                </div>          
+                  
+                <!-- <div class="project-description-div"> -->
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere ea
+                    officia consectetur. Laborum, dolor? Assumenda quo corrupti eveniet
+                    velit fugit fugiat odit, dolorum labore obcaecati quia. Commodi
+                    assumenda sed maxime!
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere ea
+                    officia consectetur. Laborum, dolor? Assumenda quo corrupti eveniet
+                    velit fugit fugit odit, dolorum labore obcaecati quia. Commodi
+                    assumenda sed maxime!
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere ea
+                    officia consectetur. Laborum, dolor? Assumenda quo corrupti eveniet
+                    velit fugit fugiat odit, dolorum labore obcaecati quia. Commodi
+                    assumenda sed maxime!
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere ea
+                    officia consectetur. Laborum, dolor? Assumenda quo corrupti eveniet
+                    velit fugit fugit odit, dolorum labore obcaecati quia. Commodi
+                    assumenda sed maxime!
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere ea
+                    officia consectetur. Laborum, dolor? Assumenda quo corrupti eveniet
+                    velit fugit fugiat odit, dolorum labore obcaecati quia. Commodi
+                    assumenda sed maxime!
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere ea
+                    officia consectetur. Laborum, dolor? Assumenda quo corrupti eveniet
+                    velit fugit fugit odit, dolorum labore obcaecati quia. Commodi
+                    assumenda sed maxime!
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere ea
+                    officia consectetur. Laborum, dolor? Assumenda quo corrupti eveniet
+                    velit fugit fugiat odit, dolorum labore obcaecati quia. Commodi
+                    assumenda sed maxime!
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere ea
+                    officia consectetur. Laborum, dolor? Assumenda quo corrupti eveniet
+                    velit fugit fugit odit, dolorum labore obcaecati quia. Commodi
+                    assumenda sed maxime!
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere ea
+                    officia consectetur. Laborum, dolor? Assumenda quo corrupti eveniet
+                    velit fugit fugiat odit, dolorum labore obcaecati quia. Commodi
+                    assumenda sed maxime!
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere ea
+                    officia consectetur. Laborum, dolor? Assumenda quo corrupti eveniet
+                    velit fugit fugit odit, dolorum labore obcaecati quia. Commodi
+                    assumenda sed maxime!
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere ea
+                    officia consectetur. Laborum, dolor? Assumenda quo corrupti eveniet
+                    velit fugit fugiat odit, dolorum labore obcaecati quia. Commodi
+                    assumenda sed maxime!
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere ea
+                    officia consectetur. Laborum, dolor? Assumenda quo corrupti eveniet
+                    velit fugit fugit odit, dolorum labore obcaecati quia. Commodi
+                    assumenda sed maxime!
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere ea
+                    officia consectetur. Laborum, dolor? Assumenda quo corrupti eveniet
+                    velit fugit fugiat odit, dolorum labore obcaecati quia. Commodi
+                    assumenda sed maxime!
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere ea
+                    officia consectetur. Laborum, dolor? Assumenda quo corrupti eveniet
+                    velit fugit fugit odit, dolorum labore obcaecati quia. Commodi
+                    assumenda sed maxime!
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere ea
+                    officia consectetur. Laborum, dolor? Assumenda quo corrupti eveniet
+                    velit fugit fugiat
+
+                  </p>
+                <!-- </div> -->
               </div>
             </div>
             
@@ -1026,6 +1181,21 @@ had hands on experience with all types of 3d printers.
                 <!-- <div class="project-img-div">
                   <img class="project-image-model" src="./assets/images/mooc_0.png" alt="MOOC Certifications" loading="lazy">
                 </div> -->
+                <div class="swiper mySwiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">Slide 1</div>
+                    <div class="swiper-slide">Slide 2</div>
+                    <div class="swiper-slide">Slide 3</div>
+                    <div class="swiper-slide">Slide 4</div>
+                    <div class="swiper-slide">Slide 5</div>
+                    <div class="swiper-slide">Slide 6</div>
+                    <div class="swiper-slide">Slide 7</div>
+                    <div class="swiper-slide">Slide 8</div>
+                    <div class="swiper-slide">Slide 9</div>
+                  </div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                </div>
                 <p>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere ea
                 officia consectetur. Laborum, dolor? Assumenda quo corrupti eveniet
@@ -1472,7 +1642,7 @@ had hands on experience with all types of 3d printers.
         <section class="contact-form">
 
           <h3 class="h3 form-title">Contact Form</h3>
-          <form action="https://formsubmit.co/el/tizura" class="form" method="POST">
+          <form action="https://formspree.io/f/mvolnqen" id="my-form" class="form" method="POST">
             <input type="hidden" name="_subject" value="New Contact Mail!">
             <div class="input-wrapper">
               <input type="text" name="fullname" class="form-input" placeholder="Full name">
@@ -1488,7 +1658,7 @@ had hands on experience with all types of 3d printers.
             </button>
             <input type="text" name="_honey" style="display:none">
           </form>
-
+          <p class="my-form-status" id="my-form-status"></p>
         </section>
 
       </article>
@@ -1505,8 +1675,36 @@ had hands on experience with all types of 3d printers.
   <!--
     - custom js link
   -->
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
   <script src="./assets/js/script.js"></script>
-
+  
   <!--
     - ionicon link
   -->
